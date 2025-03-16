@@ -17,11 +17,16 @@ export class NavbarComponent {
     this.router.navigate(['/home'])
 
   }
-  onClickTodo(){
-    this.router.navigate(['/toDoList'])
+  
+  onClickList(){
+    this.router.navigate(['/List'])
   }
 
-  onClickLogIn(){
-    this.router.navigate(['/login'])
+  onClickLogin(){
+    this.router.navigate(['/Login'])
+  }
+
+  onClickTodo(){
+    this.router.navigate(['/toDoList'])
   }
 }

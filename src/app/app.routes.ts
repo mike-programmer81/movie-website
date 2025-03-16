@@ -23,12 +23,24 @@ export const routes: Routes = [
 },
 
 {
-    path:'login',
+    path:'List',
     component:NavbarComponent,
     children:[
         {
             path:'',
-            loadChildren:() => import('./pages/login/login.routes').then(r=>r.logInRoutes)
+            loadChildren:() => import('./pages/List/List.routes').then(r=>r.ListRoutes)
+            
+        }
+    ]
+},
+{
+    path:'Login',
+    component:NavbarComponent,
+    children:[
+        {
+            path:'',
+            loadChildren:() => import('./pages/Login/Login.routes').then(r=>r.LoginRoutes)
+            
         }
     ]
 }
